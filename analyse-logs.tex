@@ -4,7 +4,7 @@
 \usepackage[french]{babel}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{hyperref}
-
+\usepackage{graphicx}
 
 %opening
 \title{TP}
@@ -51,17 +51,43 @@ tabsize=2
 \maketitle
 
 
-\url{https://github.com/SlaynPool/CR_/}
+\url{https://github.com/SlaynPool/CR_Latex/}
 
+\section{Écrire le script qui permet d’ouvrir le fichier de logauth.loget de comptabiliser le nombre de fois où’authentication failure’apparaît.}
+\insertcode{code/1.py}{comptabiliser occurence}
 
+ \section{Faire la même chose avec’Failed password for invalid user’}
+ \insertcode{code/2.py}{Même chose}
+ \section{Utilisation d'un dictionnaire et matplotlib}
+ \insertcode{code/3.py}{Utilisation d'un dictionnaire}
+ De là, si on veut chercher une nouvezlle chaine de character, il suffit de rajouter une entrée dans notre dictionnaire.
+ On peut de là créer un graphique comme ceci :
+ \insertcode{code/4.py}{Utilisation de matplotlib}
+ \begin{figure}[h!]
+\centering
+\includegraphics[scale=0.50]{image/1.jpg}
+\caption{Graphique génerée }
+\label{fig:net }
+\end{figure}
+\section{Adapter votre code pour produire un camembert relatif à vos calculs}
+Ha ben ducoup, déja fait.
 
- 
- 
- 
- 
+\section{En analysant vos fichiers de logs, ou celui de la machine web-mmiprésent sur Moodle, ajouter quelques informations supplémentaires à monitorer dans vos calculs}
+Honnetement j'ai pas trop d'idée mais :
+\insertcode{code/5.py}{Analyse des Failed as ROOT}
 
+\section{Modifier votre programme Python pour pouvoir générer un tel rapport en LATEX.  Vous pourrez écrire un script Bash pour exécuter votre script Python puis compiler le fichier.tex généré à l’aide de la commande pdflatex}
 
+ \insertcode{code/6.py}{Génération de PDF en python}
 
+Voici un screen du rapport ainsi généré (le pdf est trouvable sur le git relatife au tp)
+
+ \begin{figure}[h!]
+\centering
+\includegraphics[scale=0.250]{image/2.jpg}
+\caption{Rapport génerée }
+\label{fig:net }
+\end{figure}
 
 \end{document}
 
